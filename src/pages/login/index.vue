@@ -79,6 +79,11 @@ function createCode() {
   })
 }
 
+/** 进入个人手写页面 */
+function handleWarning() {
+  router.push("/html")
+}
+
 // 初始化验证码
 createCode()
 </script>
@@ -146,6 +151,9 @@ createCode()
           </el-form-item>
           <el-button :loading="loading" type="primary" size="large" @click.prevent="handleLogin">
             登 录
+          </el-button>
+          <el-button type="warning" size="large" @click.prevent="handleWarning">
+            面 试 + 创业
           </el-button>
         </el-form>
       </div>

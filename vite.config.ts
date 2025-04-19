@@ -22,7 +22,8 @@ export default defineConfig(({ mode }) => {
         // @ 符号指向 src 目录
         "@": resolve(__dirname, "src"),
         // @@ 符号指向 src/common 通用目录
-        "@@": resolve(__dirname, "src/common")
+        "@@": resolve(__dirname, "src/common"),
+        "~highlight.js": resolve(__dirname, "node_modules/highlight.js")
       }
     },
     // 开发环境服务器配置
